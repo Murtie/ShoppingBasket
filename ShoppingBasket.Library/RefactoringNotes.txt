@@ -31,4 +31,13 @@ ISSUE FOUR
 Magic strings in TotalwithDiscount method.
 Basket class Fails on OCP SOLID Principle
 
+FIX FOUR
+Converting business logic into objects by using Strategy Design Pattern, will help remove the logic out of the class. 
+This will help achieve OCP SOLID Principle. 
+Creating and IPromoOffer interface with a calculate discount function based on the offer.
+It should also check if the product is eligible for discount
+This function should return the total applicable discount for that particular offer.
+Dependency Inversion Princple implemented by not assigning a class parameter to the constructor of PromoOfferDiscountCalculator class.
+Concrete class created for the first offer PromoOfferHalfOffBreadForTwoButters
+New non-class parameterised constructor created of Basket class to allow Dependency Injection
 

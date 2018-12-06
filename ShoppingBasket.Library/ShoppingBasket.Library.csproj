@@ -46,6 +46,10 @@
     <Compile Include="IBasketItem.cs" />
     <Compile Include="IBasketTotal.cs" />
     <Compile Include="IBasketTotalWithDiscount.cs" />
+    <Compile Include="IPromoOffer.cs" />
+    <Compile Include="IPromoOfferDiscountCalculator.cs" />
+    <Compile Include="PromoOfferDiscountCalculator.cs" />
+    <Compile Include="PromoOfferHalfOffBreadForTwoButters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
