@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace ShoppingBasket.Library
 {
-
-    public interface IBasket
+    /// OCP Pass
+    /// DIP Pass
+    /// ISP Pass - No longer forcing multiple methods
+    public interface IBasketTotal
     {
-        List<IBasketItem> BasketItems { get; }
-
-        void AddItem(IBasketItem basketItem);
-
+        decimal Total();
     }
 }

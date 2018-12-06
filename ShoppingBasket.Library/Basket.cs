@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ShoppingBasket.Library
 {
 
-    public class Basket : IBasket
+    public class Basket : IBasket, IBasketTotal
     {
         private readonly List<IBasketItem> _basketitems;
 
