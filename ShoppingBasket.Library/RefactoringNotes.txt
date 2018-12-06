@@ -1,1 +1,31 @@
 ﻿
+ISSUE ONE
+Basket.cs
+Not following SOLID Design Principles
+Not open for extension but open for modification - OCP Fail
+Not following Dependency Inversion Principle - tightly coupled with BasketItem Class
+
+FIX ONE
+IBasket created as an Interface to meet certain SOLID Design Principles
+OCP Pass
+
+ISSUE TWO
+BasketItem.cs
+Not following SOLID Design Principles
+Not open for extension but open for modification - OCP Fail
+Creates dependency on this Class wherever referenced - DIP Fail
+
+FIX TWO
+IBasketItem created as an Interface to remove DIP between Basket and BasketItem
+References to BasketItem replaced with IBasketItem in Basket class
+
+ISSUE THREE
+IBasket.cs
+Currently fails on Interface Segregation Principle as it is forcing more than one method
+
+FIX THREE
+IBasketTotal created as an Interface to remove the ISP issue - IBasket interface is no longer 
+forcing multiple methods
+
+
+

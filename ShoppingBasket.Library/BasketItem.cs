@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace ShoppingBasket.Library
 {
-    /// <summary>
-    /// Not following SOLID Design Principles
-    /// Not open for extension but open for modification - OCP Fail
-    /// Creates dependency on this Class wherever referenced - DIP Fail
-    /// </summary>
-    public class BasketItem
+
+    public class BasketItem : IBasketItem
     {
         public decimal Price
         {

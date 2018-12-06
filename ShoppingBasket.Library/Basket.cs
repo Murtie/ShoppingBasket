@@ -6,26 +6,23 @@ using System.Threading.Tasks;
 
 namespace ShoppingBasket.Library
 {
-    ///
-    /// Not following SOLID Design Principles
-    /// Not open for extension but open for modification - OCP Fail
-    /// Not following Dependency Inversion Principle - tightly coupled with BasketItem Class
-    public class Basket
+
+    public class Basket : IBasket
     {
-        private readonly List<BasketItem> _basketitems;
+        private readonly List<IBasketItem> _basketitems;
 
         public Basket()
         {
-            _basketitems = new List<BasketItem>();
+            _basketitems = new List<IBasketItem>();
         }
 
-        public List<BasketItem> BasketItems
+        public List<IBasketItem> BasketItems
         {
             get { return _basketitems; }
         }
 
 
-        public void AddItem(BasketItem basketItem)
+        public void AddItem(IBasketItem basketItem)
         {
             _basketitems.Add(basketItem);
         }
