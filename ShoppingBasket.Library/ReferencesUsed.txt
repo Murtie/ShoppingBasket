@@ -1,0 +1,14 @@
+﻿I've revisited some of the course material used when I was studying SOLID principles.
+Udemy Courses - SOLID Simplified - Design Fundamentals
+				Software Architecture: Meta And SOLID Principles in C#
+
+
+GWT Style for Behaviour Driven Development - Martin Fowler's Blog - GivenWhenThen
+https://martinfowler.com/bliki/GivenWhenThen.html
+
+NUnit Testing - http://nunit.org/docs/2.5/parameterizedTests.html
+
+Ideas for discount calculations
+https://www.dreamincode.net/forums/topic/210060-c%23-discount-calculation/
+https://stackoverflow.com/questions/22001952/calculate-discount-price
+http://pogramersinn.blogspot.com/2013/04/items-price-calculation-in-c.html
