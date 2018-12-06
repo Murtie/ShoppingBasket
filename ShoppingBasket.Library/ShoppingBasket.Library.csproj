@@ -45,6 +45,7 @@
     <Compile Include="IBasket.cs" />
     <Compile Include="IBasketItem.cs" />
     <Compile Include="IBasketTotal.cs" />
+    <Compile Include="IBasketTotalWithDiscount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

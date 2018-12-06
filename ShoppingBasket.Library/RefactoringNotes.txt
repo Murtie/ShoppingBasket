@@ -27,5 +27,8 @@ FIX THREE
 IBasketTotal created as an Interface to remove the ISP issue - IBasket interface is no longer 
 forcing multiple methods
 
+ISSUE FOUR
+Magic strings in TotalwithDiscount method.
+Basket class Fails on OCP SOLID Principle
 
 
