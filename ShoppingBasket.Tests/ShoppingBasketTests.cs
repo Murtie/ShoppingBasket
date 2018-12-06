@@ -14,9 +14,32 @@ namespace ShoppingBasket.Tests
     /// </summary>
     public class ShoppingBasketTests
     {
+        /// <summary>
+        /// Scenario 3 - Given the basket has 4 milk when I total the basket then the 
+        /// total should be £3.45
+        /// </summary>
+        [Test]
+        public void BasketTotal_GivenFourMilk_ReturnsTotal345p()
+        {
+            //Given
+            List<IPromoOffer> promoOffers = new List<IPromoOffer>();
+            promoOffers.Add(new PromoOfferBuyThreeMilkGetOneFree());
+            var promoCalculator = new PromoOfferDiscountCalculator(promoOffers);
+            var basket = new Basket(promoCalculator);
+            var Milk = new BasketItem() { ProductName = "Milk", Quantity = 4, Price = 1.15m };
+
+            basket.AddItem(Milk);
+
+            //When
+            var result = basket.TotalwithDiscount();
+
+            //Then
+            Assert.That(result, Is.EqualTo(3.45m));
+        }
+
 
         /// <summary>
-        /// Given the basket has 2 butter and 2 bread when I total 
+        /// Scenario 2 - Given the basket has 2 butter and 2 bread when I total 
         /// the basket then the total should be £3.10
         /// </summary>
         [Test]
@@ -43,7 +66,7 @@ namespace ShoppingBasket.Tests
 
      
         /// <summary>
-        /// Given the basket has 1 bread, 1 butter and 1 milk when 
+        /// Scenario 1 - Given the basket has 1 bread, 1 butter and 1 milk when 
         /// I total the basket then the total should be £2.95
         /// </summary>
         [Test]
